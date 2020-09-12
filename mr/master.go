@@ -27,6 +27,7 @@ type Tasks struct {
 	task  []Task
 }
 
+// Task defines
 type Task struct {
 	stat taskStatus
 }
@@ -72,7 +73,7 @@ func (m *Master) HandleTask(args *Args, reply *Reply) error {
 	}
 
 	if m.mapTasks.finished() {
-		
+
 	}
 
 	return nil
@@ -116,7 +117,7 @@ func MakeMaster(files []string, nReduce int) *Master {
 	return &m
 }
 
-// NewTask create a task
+// NewTasks create a task
 func NewTasks(n int) *Tasks {
 	tasks := Tasks{num: n}
 	return &tasks
