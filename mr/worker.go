@@ -22,8 +22,8 @@ func ihash(key string) int {
 // Worker called by main/mrworker.go to send an RPC to the master asking for a task
 func Worker(mapf func(string, string) []KeyValue,
 	reducef func(string, []string) string) {
-	// TODO: 
-	
+	// TODO:
+
 	args := Args{}
 	reply := Reply{}
 
